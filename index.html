@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+    <body class="bg-light py-3 py-lg-5">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-lg ">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index1.html">Результаты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <div class="text-center">
+      <h1 class="display-4">Опрос: "Как хорошо вы знаете группу BTS"</h1>
+      <p class="text-mute text-center">Узнайте насколько хорошо вы знаете южнокорейскую группу BTS</p>
+      </div>
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+        <button class="nav-link active pt-3 pb-3" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+        <h4 class="m-0">Шаг 1</h4>
+        <h6 class="m-0">персональная информация</h6></button>
+        </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link pt-3 pb-3" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+        <h4 class="m-0">Шаг 2</h4>
+        <h6 class="m-0">опрос</h6></button>
+        </button>
+        </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link pt-3 pb-3" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+        <h4 class="m-0">Шаг 3</h4>
+        <h6 class="m-0">результаты опроса</h6></button>
+        </button>
+        </li>
+        </ul>
+      <div class="tab-content" id="myTab">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row pt-3">
+            <div class="col-md-3 mb-3">
+              <p>Пол</p>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >Мужчина</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Женщина</label
+                >
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <p>Возраст</p>
+              <input type="age" class="form-control" />
+            </div>
+            <div class="col-md-6 mb-3">
+              <p>Телефон</p>
+              <input type="phone" class="form-control" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <p>ФИО</p>
+              <input
+                type="name"
+                class="form-control"
+                placeholder="Введите имя"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <p>Email</p>
+              <input
+                type="email"
+                class="form-control"
+                aria-describedby="emailHelp"
+                placeholder="Введите email"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mb-3">
+              <p>Адресс</p>
+              <input
+                type="adress"
+                class="form-control"
+                placeholder="Введите адрес"
+              />
+            </div>
+            <div class="col-md-3 mb-3">
+              <p>Этаж или апартаменты</p>
+              <input type="floor" class="form-control" placeholder="12 кв." />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <p>Город</p>
+              <input type="City" class="form-control" placeholder="Город" />
+            </div>
+            <div class="col-md-2 mb-3">
+              <p>Индекс</p>
+              <input type="zip" class="form-control" placeholder="123" />
+            </div>
+            <div class="col-md-4 mb-3">
+              <p>Страна</p>
+              <select class="form-select">
+                <option>Россия</option>
+                <option>Корея</option>
+                <option>Китай</option>
+                <option>Япония</option>
+              </select>
+            </div>
+          </div>
+          <button
+type="button"
+class="btn btn-outline-secondary d-block ms-auto"
+id="go-to-step-2"
+>
+Шаг 2
+</button>
+        </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="container">
+      <h2 class="h5 text-center mb-3 pt-3">Кто макнэша группы?</h2>
+      <div class="row">
+      <div class="col-lg-6">
+      <figure class="figure">
+      <img src="img/photo3.jpg" class="figure-img img-fluid rounded">
+      <figcaption class="figure-caption">Anpanman</figcaption>
+      </figure>
+      </div>
+      <div class="col-lg-6">
+      <div class="form-check mb-1">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+      <label class="form-check-label" for="inlineRadio1">Чимин</label>
+      </div>
+      <div class="form-check mb-1">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+      <label class="form-check-label" for="inlineRadio1">Чонгук</label>
+      </div>
+      <div class="form-check mb-1">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+      <label class="form-check-label" for="inlineRadio1">Хосок</label>
+      </div>
+      <div class="form-check mb-1">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+      <label class="form-check-label" for="inlineRadio1">Намджун</label>
+      </div>
+      <div class="form-check mb-1">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+      <label class="form-check-label" for="inlineRadio1">Юнги</label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+      <label class="form-check-label" for="inlineRadio1">
+      <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+      <p>Введите свой вариант ответа</p>
+      </label>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <hr>
+
+      <div class="container">
+        <h2 class="h5 text-center mb-3">Кто поцеловал в клипе Blood, Sweet and tears, статую?</h2>
+        <div class="row">
+        <div class="col-lg-6">
+        <figure class="figure">
+        <img src="img/photo1.jpg" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">Шуга</figcaption>
+        </figure>
+        </div>
+        <div class="col-lg-6">
+        <div class="form-check mb-1">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+        <label class="form-check-label" for="inlineRadio1">Джин</label>
+        </div>
+        <div class="form-check mb-1">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+        <label class="form-check-label" for="inlineRadio1">Хосок</label>
+        </div>
+        <div class="form-check mb-1">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+        <label class="form-check-label" for="inlineRadio1">Чимин</label>
+        </div>
+        <div class="form-check mb-1">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+        <label class="form-check-label" for="inlineRadio1">Чонгук</label>
+        </div>
+        <div class="form-check mb-1">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+        <label class="form-check-label" for="inlineRadio1">Тэхен</label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+        <label class="form-check-label" for="inlineRadio1">
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+        <p>Введите свой вариант ответа</p>
+        </label>
+        </div>
+        </div>
+        </div>
+        </div>
+
+          <hr>
+
+        <div class="container">
+          <h2 class="h5 text-center mb-3">С какой песней BTS дебютировали?</h2>
+          <div class="row">
+          <div class="col-lg-6">
+          <figure class="figure">
+          <img src="img/photo4.jpg" class="figure-img img-fluid rounded">
+          <figcaption class="figure-caption">American Music Awards</figcaption>
+          </figure>
+          </div>
+          <div class="col-lg-6">
+          <div class="form-check mb-1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+          <label class="form-check-label" for="inlineRadio1">We are bulletproof.</label>
+          </div>
+          <div class="form-check mb-1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+          <label class="form-check-label" for="inlineRadio1">Miss Right.</label>
+          </div>
+          <div class="form-check mb-1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+          <label class="form-check-label" for="inlineRadio1">No more dream.</label>
+          </div>
+          <div class="form-check mb-1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+          <label class="form-check-label" for="inlineRadio1">Dope.</label>
+          </div>
+          <div class="form-check mb-1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+          <label class="form-check-label" for="inlineRadio1">Tommorrow.</label>
+          </div>
+          <div class="form-check">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+          <label class="form-check-label" for="inlineRadio1">
+          <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+          <p>Введите свой вариант ответа</p>
+          </label>
+          </div>
+          </div>
+          </div>
+          </div>
+          
+          <hr>
+
+          <div class="container">
+            <h2 class="h5 text-center mb-3">Как назывется фандом группы BTS?</h2>
+            <div class="row">
+            <div class="col-lg-6">
+            <figure class="figure">
+            <img src="img/photo5.png" class="figure-img img-fluid rounded">
+            <figcaption class="figure-caption">BS&T</figcaption>
+            </figure>
+            </div>
+            <div class="col-lg-6">
+            <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+            <label class="form-check-label" for="inlineRadio1">V.I.P</label>
+            </div>
+            <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+            <label class="form-check-label" for="inlineRadio1">Inner Circle</label>
+            </div>
+            <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+            <label class="form-check-label" for="inlineRadio1">Shawol</label>
+            </div>
+            <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+            <label class="form-check-label" for="inlineRadio1">A.R.M.Y</label>
+            </div>
+            <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+            <label class="form-check-label" for="inlineRadio1">Melody</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+            <label class="form-check-label" for="inlineRadio1">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+            <p>Введите свой вариант ответа</p>
+            </label>
+            </div>
+            </div>
+            </div>
+            </div>
+            <button
+            type="button"
+            class="btn btn-outline-secondary d-block ms-auto"
+            id="go-to-step-3"
+            >
+            Шаг 3
+            </button>
+      
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="container">
+              <div class="row">
+                <div class="col-lg-6 mt-3">
+                  <h3>Какой участник постоянно все ломает?</h3>
+                  <p>Выберите правильный вариант ответа</p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex justify-content-between mb-3 mt-3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Чимин</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Чонгук</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Намджун</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Джин</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Тэхен</label>
+                  </div>
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3>У какого участника собаку зовут Ёнтан?</h3>
+                  <p>Выберите правильный вариант ответа</p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex justify-content-between mb-3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Джин</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Хосок</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Чимин</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Чонгук</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+                    <label class="form-check-label" for="inlineRadio1">Чонгук</label>
+                  </div>
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3>Сколько участников в группе?</h3>
+                  <p>Выберите правильный вариант ответа</p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="btn-group mb-3" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-secondary" for="btnradio1">5</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio2">6</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio3">8</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio3">7</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio3">4</label>
+                  </div>
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3>Как зовут продюссера БТС?</h3>
+                  <p>Выберите правильный вариант ответа</p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="btn-group mb-3" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-secondary" for="btnradio1">Шихек</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio2">Сохек</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio3">Чанёль</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio3">Сюмин</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio3">Кихен</label>
+                  </div>
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3>Оцени насколько сильно тебе нравятся BTS</h3>
+                  <p>Выберите правильный вариант ответа</p>
+                </div>
+                <div class="col-lg-6">
+                  <input type="range" class="form-range" step="10">
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3>Как часто ты слушаешь BTS</h3>
+                  <p>Выберите правильный вариант ответа</p>
+                </div>
+                <div class="col-lg-6">
+                  <input type="range" class="form-range" step="10">
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Other">
+                </div>
+              </div>
+              <button
+            type="button"
+            class="btn btn-outline-secondary d-block ms-auto"
+            id="go-to-step-3"
+            >
+            Отправить
+            </button>
+              </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+      
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
